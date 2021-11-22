@@ -7,10 +7,10 @@ getenv('MYSQL_DBPASS') ? $db_pass=getenv('MYSQL_DBPASS') : $db_pass="";
 getenv('MYSQL_DBNAME') ? $db_name=getenv('MYSQL_DBNAME') : $db_name="logintst";
 
 $conn = mysqli_connect("$db_host", 
-"$db_port", 
 "$db_user", 
 "$db_pass", 
-"$db_name"
+"$db_name", 
+"$db_port"
 );
 
 if ($conn->connect_error) 

@@ -10,6 +10,7 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=secret
       - MYSQL_TCP_PORT=3306
+      - MYSQL_DATABASE=logintst
     volumes:
       - datafiles:/var/lib/mysql
     restart: always
